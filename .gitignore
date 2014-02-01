@@ -37,3 +37,9 @@ nosetests.xml
 
 # virtualenv
 venv
+
+# databases
+*.db
+
+# app folders
+import
