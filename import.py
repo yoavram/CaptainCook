@@ -17,7 +17,7 @@ class Importer(FileSystemEventHandler):
         try:
             Recipe.get(Recipe.image==path)
         except DoesNotExist:
-            recipe = Recipe.create(name='', image=path)
+            recipe = Recipe.create(image=path)
             logging.info("New recipe in file %s", path)
 
 
